@@ -12,7 +12,7 @@ namespace SettingsTest
     public class SettingsSession
     {
         private const string WindowsApplicationDriverUrl = "http://127.0.0.1:4723";
-        private const string SettingsAppPath = @"Windows.ImmersiveControlPanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel";
+        private const string SettingsAppId = @"Windows.ImmersiveControlPanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel";
         
         protected static WindowsDriver<WindowsElement> session;
 
@@ -24,7 +24,7 @@ namespace SettingsTest
                 // Create a new session to bring up an instance of the Calculator application
                 // Note: Multiple calculator windows (instances) share the same process Id
                 DesiredCapabilities appCapabilities = new DesiredCapabilities();
-                appCapabilities.SetCapability("app", SettingsAppPath);
+                appCapabilities.SetCapability("app", SettingsAppId);
                 session = new WindowsDriver<WindowsElement>(new Uri(WindowsApplicationDriverUrl), appCapabilities);
                 Assert.IsNotNull(session);
 
