@@ -7,11 +7,11 @@ Sample test codes of Windows 10 settings app with Windows Application Driver
 To test UWP app, you can find the Applicatin Id of UWP app by running the application, going to taks manager and clicking on properties of the application.
 For example, the Application Id of Calculator app is as shown below.
 
-![Calculator](https://gist.githubusercontent.com/tafuji/f8fad3da5da382078ec1f31000c79c6e/raw/cac6ec52f05a15b6dcbcfcde10eb70069d0647ba/01-Calculator.png)
+![Calculator](https://github.com/tafuji/WinAppDriver-SettingsTestSample/raw/master/Screenshots/01-Calculator.png)
 
 However, you cannot get the Application Id of settings app of Windows 10 from properties.
 
-![Settingsapp](https://gist.githubusercontent.com/tafuji/f8fad3da5da382078ec1f31000c79c6e/raw/cac6ec52f05a15b6dcbcfcde10eb70069d0647ba/02-SettingsApp.png)
+![Settingsapp](https://github.com/tafuji/WinAppDriver-SettingsTestSample/raw/master/Screenshots/02-SettingsApp.png)
 
 I found the Appliction Id form the error messaege, which are described on the [question](https://answers.microsoft.com/en-us/windows/forum/windows_10-start/pc-settings-wont-open-since-new-windows-10-upgrade/f9d764da-1fd3-4c84-a1ff-6fec9b378a89) in Microsoft Comunity.
 
@@ -40,4 +40,4 @@ session.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(1.5));
 
 The ```ChangeBackGroundTest``` test method of ```ScenarioPersonarization``` class is a example which change the background of PC from photo to solid color. Here is the gif animation, where changing background ui test is executed.
 
-![demo](https://gist.githubusercontent.com/tafuji/f8fad3da5da382078ec1f31000c79c6e/raw/cac6ec52f05a15b6dcbcfcde10eb70069d0647ba/03-demo.gif)
+![demo](https://github.com/tafuji/WinAppDriver-SettingsTestSample/raw/master/Screenshots/03-demo.gif)
